@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizNerds - [Tagline / Short Description]</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container navbar">
+            <a href="#" class="logo">BizNerds</a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobileMenu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-content">
+            <h1>Empowering Your Business with [Core Solution]</h1>
+            <p>We help businesses [describe your primary value proposition or mission] through innovative
+                [industry/services] solutions.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <a href="#services" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>What we can do for you</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>NFC Tags</h3>
+                    <p>[Short description of the first service you offer and how it benefits the client.]</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>[Service 2 Title]</h3>
+                    <p>[Short description of the second service you offer and how it benefits the client.]</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-headset"></i>
+                    <h3>[Service 3 Title]</h3>
+                    <p>[Short description of the third service you offer and how it benefits the client.]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2>About BizNerds</h2>
+                <p>Founded in 2026, BizNerds has been dedicated to providing top-notch [industry] services. Our
+                    team of experts focuses on delivering quality, reliability, and exceptional results for every client
+                    we work with.</p>
+                <p>[Optional additional paragraph about your mission, values, or company culture.]</p>
+            </div>
+            <div class="about-image">
+                <!-- Replace with your own image or placeholder graphic -->
+                <div class="image-placeholder">[Company Team / Office Image]</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with our team</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Let's talk about your project</h3>
+                    <p><i class="fa-solid fa-envelope"></i> [email@example.com]</p>
+                    <p><i class="fa-solid fa-phone"></i> [+31 (0) 123 456 789]</p>
+                    <p><i class="fa-solid fa-location-dot"></i> [Street Name, City, Country]</p>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    <p id="formStatus" class="form-status"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 BizNerds. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
