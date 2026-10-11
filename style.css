@@ -21,7 +21,7 @@
 
     /* Section and footer colors */
     --accent-bg-color: #009687;
-    --section-bg-color: #80cca2f7;
+    --section-bg-color: #00a5cf;
     --footer-bg-color: #111827;
     --footer-text-color: #9ca3af;
     --white-color: var(--bg-color);
@@ -158,7 +158,6 @@ header {
     width: fit-content;
     max-width: calc(100% - 2rem);
     margin: 0 auto;
-    background-color: var(--accent-bg-color);
 }
 
 .hero-content h1 {
@@ -275,18 +274,6 @@ header {
     height: 100%;
 }
 
-.image-placeholder {
-    width: 100%;
-    height: 300px;
-    background-color: var(--border-color);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-light);
-    font-weight: 500;
-}
-
 /* Product Listing */
 .products-section {
     padding-top: 3rem;
@@ -338,7 +325,7 @@ header {
 }
 
 /* Contact Section */
-.service-card contact-container {
+.contact-container {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: 4rem;
@@ -442,7 +429,7 @@ footer {
         display: block;
     }
 
-    .service-card hero-content h1 {
+    .hero-content h1 {
         font-size: 2rem;
     }
 
