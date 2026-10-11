@@ -6,8 +6,8 @@
 }
 
 :root {
-    --primary-color: #2563eb;
-    --primary-dark: #1d4ed8;
+    --primary-color: #00a5cf;
+    --primary-dark: #004e64;
     --text-color: #1f2937;
     --text-light: #4b5563;
     --bg-color: #ffffff;
@@ -67,7 +67,7 @@ html {
 /* Header & Navbar */
 header {
     background-color: var(--bg-color);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     position: fixed;
     top: 0;
     left: 0;
@@ -126,9 +126,20 @@ header {
 
 /* Hero Section */
 .hero {
+    background-color: #009687;
     padding: 10rem 0 6rem 0;
-    background: linear-gradient(rgba(37, 99, 235, 0.05), rgba(37, 99, 235, 0.02));
+    background-image: linear-gradient(rgba(37, 99, 235, 0.05), rgba(37, 99, 235, 0.02)), url("img/hero-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
+}
+
+.hero-content {
+    width: fit-content;
+    max-width: calc(100% - 2rem);
+    margin: 0 auto;
+    background-color: #009687;
 }
 
 .hero-content h1 {
@@ -153,6 +164,7 @@ header {
 /* General Sections */
 .section {
     padding: 5rem 0;
+    background-color: #80cca2f7;
 }
 
 .section-title {
@@ -170,7 +182,7 @@ header {
 }
 
 .bg-light {
-    background-color: var(--bg-light);
+    background-color: #009687;
 }
 
 /* Services Grid */
@@ -197,7 +209,7 @@ header {
 
 .service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 .service-card-link:focus-visible {
@@ -236,6 +248,12 @@ header {
     color: var(--text-light);
     line-height: 1.6;
     margin-bottom: 1rem;
+}
+
+.about-image img {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
 }
 
 .image-placeholder {
@@ -301,7 +319,7 @@ header {
 }
 
 /* Contact Section */
-.contact-wrapper {
+.service-card contact-container {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: 4rem;
@@ -391,9 +409,9 @@ footer {
         top: 70px;
         left: 0;
         width: 100%;
-        background-color: var(--bg-color);
+        background-color: #009687;
         padding: 1.5rem 0;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
         gap: 1rem;
     }
 
@@ -405,12 +423,12 @@ footer {
         display: block;
     }
 
-    .hero-content h1 {
+    .service-card hero-content h1 {
         font-size: 2rem;
     }
 
     .about-container,
-    .contact-wrapper {
+    .contact-container {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
