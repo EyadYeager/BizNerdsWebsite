@@ -250,6 +250,13 @@ header {
     line-height: 1.6;
 }
 
+.service-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
 /* About Section */
 .about-container {
     display: grid;
