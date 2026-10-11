@@ -6,13 +6,32 @@
 }
 
 :root {
+    /* Brand */
     --primary-color: #00a5cf;
     --primary-dark: #004e64;
+
+    /* Text */
     --text-color: #1f2937;
     --text-light: #4b5563;
+
+    /* Surfaces and borders */
     --bg-color: #ffffff;
     --bg-light: #f3f4f6;
     --border-color: #e5e7eb;
+
+    /* Section and footer colors */
+    --accent-bg-color: #009687;
+    --section-bg-color: #80cca2f7;
+    --footer-bg-color: #111827;
+    --footer-text-color: #9ca3af;
+    --white-color: var(--bg-color);
+
+    /* Overlays and shadows */
+    --hero-overlay-start: rgba(37, 99, 235, 0.05);
+    --hero-overlay-end: rgba(37, 99, 235, 0.02);
+    --shadow-color: rgba(0, 0, 0, 0.05);
+
+    /* Shared effects */
     --transition: all 0.3s ease;
 }
 
@@ -42,7 +61,7 @@ html {
 
 .btn-primary {
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--white-color);
 }
 
 .btn-primary:hover {
@@ -57,7 +76,7 @@ html {
 
 .btn-secondary:hover {
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--white-color);
 }
 
 .btn-block {
@@ -67,7 +86,7 @@ html {
 /* Header & Navbar */
 header {
     background-color: var(--bg-color);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 5px var(--shadow-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -109,7 +128,7 @@ header {
 
 .btn-nav {
     background-color: var(--primary-color);
-    color: white !important;
+    color: var(--white-color) !important;
     padding: 0.5rem 1rem;
     border-radius: 4px;
 }
@@ -126,9 +145,9 @@ header {
 
 /* Hero Section */
 .hero {
-    background-color: #009687;
+    background-color: var(--accent-bg-color);
     padding: 10rem 0 6rem 0;
-    background-image: linear-gradient(rgba(37, 99, 235, 0.05), rgba(37, 99, 235, 0.02)), url("img/hero-bg.jpg");
+    background-image: linear-gradient(var(--hero-overlay-start), var(--hero-overlay-end)), url("img/hero-bg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -139,7 +158,7 @@ header {
     width: fit-content;
     max-width: calc(100% - 2rem);
     margin: 0 auto;
-    background-color: #009687;
+    background-color: var(--accent-bg-color);
 }
 
 .hero-content h1 {
@@ -164,7 +183,7 @@ header {
 /* General Sections */
 .section {
     padding: 5rem 0;
-    background-color: #80cca2f7;
+    background-color: var(--section-bg-color);
 }
 
 .section-title {
@@ -182,7 +201,7 @@ header {
 }
 
 .bg-light {
-    background-color: #009687;
+    background-color: var(--accent-bg-color);
 }
 
 /* Services Grid */
@@ -209,7 +228,7 @@ header {
 
 .service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 20px var(--shadow-color);
 }
 
 .service-card-link:focus-visible {
@@ -374,8 +393,8 @@ header {
 
 /* Footer */
 footer {
-    background-color: #111827;
-    color: #9ca3af;
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
     padding: 2rem 0;
 }
 
@@ -391,13 +410,13 @@ footer {
 }
 
 .social-links a {
-    color: #9ca3af;
+    color: var(--footer-text-color);
     font-size: 1.25rem;
     transition: var(--transition);
 }
 
 .social-links a:hover {
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 /* Responsive Styles */
@@ -409,9 +428,9 @@ footer {
         top: 70px;
         left: 0;
         width: 100%;
-        background-color: #009687;
+        background-color: var(--accent-bg-color);
         padding: 1.5rem 0;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 5px 10px var(--shadow-color);
         gap: 1rem;
     }
 
